@@ -45,7 +45,7 @@
     if (hasAll) {
         PHFetchResult<PHAssetCollection *> *allResult = [PHAssetCollection
             fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum
-                                  subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary
+                                  subtype:PHAssetCollectionSubtypeAlbumRegular
                                   options:fetchCollectionOptions];
         [self injectAssetPathIntoArray:array result:allResult options:assetOptions isAll:YES];
     }
