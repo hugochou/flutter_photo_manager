@@ -66,7 +66,7 @@ interface IDBUtils {
 
     val sizeWhere: String
         get() {
-            return "AND ${MediaStore.MediaColumns.WIDTH} > 0 AND ${MediaStore.MediaColumns.HEIGHT} > 0"
+            return ""
         }
 
     fun getGalleryList(context: Context, requestType: Int = 0, timeStamp: Long): List<GalleryEntity>
